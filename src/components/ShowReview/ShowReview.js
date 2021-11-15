@@ -6,7 +6,7 @@ const ShowReview = () => {
 
     const [displayReview, setDisplayReview] = useState([]);
     useEffect(() => {
-        fetch(`http://localhost:5000/review`)
+        fetch(`https://limitless-coast-09907.herokuapp.com/review`)
             .then(res => res.json())
             .then(data => {
                 // setProducts(data.products);

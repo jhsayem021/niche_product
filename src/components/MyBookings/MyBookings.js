@@ -6,7 +6,7 @@ const MyBookings = () => {
   const [orders, setOrders] = useState([]);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/myOrder/${user?.email}`)
+    fetch(`https://limitless-coast-09907.herokuapp.com/myOrder/${user?.email}`)
       .then((res) => res.json())
       .then((data) => setOrders(data));
   }, [user?.email]);
@@ -14,7 +14,7 @@ const MyBookings = () => {
   const handleRemoveOrder = (id)=>{
     const confirm = window.confirm('Are You Sure To Delete?')
     if(confirm){
-        const url = `http://localhost:5000/booked_service/${id}`;
+        const url = `https://limitless-coast-09907.herokuapp.com/booked_service/${id}`;
     fetch(url,{
         method:'DELETE'
     })

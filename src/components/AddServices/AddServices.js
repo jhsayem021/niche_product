@@ -1,18 +1,15 @@
 import React from "react";
 import { useForm } from "react-hook-form";
-import useAuth from "../../hooks/useAuth";
 
 const AddServices = () => {
-  const { user } = useAuth();
   const {
     register,
     handleSubmit,
-    watch,
     formState: { errors },
   } = useForm();
 
   const onSubmit = (data) => {
-    fetch("http://localhost:5000/addProducts", {
+    fetch("https://limitless-coast-09907.herokuapp.com/addProducts", {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(data),

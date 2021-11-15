@@ -11,7 +11,7 @@ const Shipping = () => {
         const savedCart = getStoredCart();
         data.order = savedCart;
 
-        fetch('http://localhost:5000/booked_service', {
+        fetch('https://limitless-coast-09907.herokuapp.com/booked_service', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

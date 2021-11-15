@@ -13,7 +13,7 @@ const OrderReview = () => {
     // products to be rendered on the UI
     const [displayProducts, setDisplayProducts] = useState([]);
     useEffect(() => {
-        fetch(`http://localhost:5000/services`)
+        fetch(`https://limitless-coast-09907.herokuapp.com/services`)
             .then(res => res.json())
             .then(data => {
                 setDisplayProducts(data.products);
