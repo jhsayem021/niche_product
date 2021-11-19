@@ -19,7 +19,7 @@ const Header = () => {
                 
                 
                 <NavLink to="/home">Home</NavLink>
-                <NavLink to="/review">Bykes</NavLink>
+                <NavLink to="/review">Bikes</NavLink>
                 <NavLink to="/about">About Us</NavLink>
                 <NavLink to="/contact">Contact Us</NavLink>
                 {user.email && <NavLink  to="/dashboard">Dashboard</NavLink>}

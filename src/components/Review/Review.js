@@ -7,7 +7,7 @@ const Review = () => {
   const { register, handleSubmit} = useForm();
   const { user } = useAuth();
   const onSubmit = (data) => {
-    fetch("https://limitless-coast-09907.herokuapp.com/addSReview", {
+    fetch('https://limitless-coast-09907.herokuapp.com/addSReview', {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(data),

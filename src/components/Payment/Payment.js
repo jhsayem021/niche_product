@@ -4,7 +4,7 @@ const Payment = () => {
     return (
         <div> 
                 <h1 className="py-5" >Payment</h1>
-            <h3 className="text-center text-primary p-5">Payment Proccedure Comming soon </h3>
+            <h3 className="text-center text-primary p-5">Payment Is Coming Soon </h3>
         </div>
     );
 };

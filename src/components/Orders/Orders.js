@@ -35,7 +35,7 @@ const Orders = () => {
 
     return (
         <div>
-            <h2>Total order Placed: {orders.length} Orders</h2>
+            <h2>Total Order Placed: {orders.length} Orders</h2>
             <ol >
                 {orders.map(order => <li 
                     key={order._id}

@@ -15,7 +15,7 @@ const MakeAdmin = () => {
   };
   return (
     <div>
-      <h1>make admin</h1>
+      <h1>Make Admin</h1>
       <form onSubmit={handleSubmit(onSubmit)}>
         <input
           className="input-field"

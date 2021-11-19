@@ -8,9 +8,7 @@ import AllService from '../AllService/AllService';
 import { Spinner } from 'react-bootstrap';
 
 const OrderReview = () => {
-    // const [cart, setCart] = useCart();
-    // const history = useHistory();
-    // products to be rendered on the UI
+
     const [displayProducts, setDisplayProducts] = useState([]);
     useEffect(() => {
         fetch(`https://limitless-coast-09907.herokuapp.com/services`)
@@ -19,26 +17,6 @@ const OrderReview = () => {
                 setDisplayProducts(data.products);
             });
     }, []);
-
-    // const handleAddToCart = (product) => {
-    //     const exists = cart.find(pd => pd.key === product.key);
-    //     let newCart = [];
-    //     if (exists) {
-    //         const rest = cart.filter(pd => pd.key !== product.key);
-    //         exists.quantity = exists.quantity + 1;
-    //         newCart = [...rest, product];
-    //     }
-    //     else {
-    //         product.quantity = 1;
-    //         newCart = [...cart, product];
-    //     }
-    //     setCart(newCart);
-    //     addToDb(product.key);
-        
-    // }
-    // const handleProceedToShipping = () => {
-    //     history.push('/shipping');
-    // }
     return (
         <div className="shop-container">
             <div className="product-container">
@@ -57,15 +35,11 @@ const OrderReview = () => {
                         displayProducts.map(product =><AllService
                             key={product._id}
                             product={product}
-                            // handleAddToCart={handleAddToCart}
+                            
                         ></AllService>)                
                    }
             </div>
-            {/* <div className="cart-container">
-                <Cart cart={cart}>
-                    <button onClick={handleProceedToShipping} className="btn-regular">Shipping Now</button>
-                </Cart>
-            </div> */}
+        
         </div>
     );
 };

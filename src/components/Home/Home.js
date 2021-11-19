@@ -1,7 +1,7 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-// import Client from '../Client/Client';
+import Client from '../Client/Client';
 import ContactForm from '../Contact/Contact';
 import Shop from '../Shop/Shop';
 import ShowReview from '../ShowReview/ShowReview';
@@ -47,7 +47,7 @@ const Home = () => {
                 </div>
             </div>
             <div>
-                {/* <Client></Client> */}
+                <Client></Client>
             </div>
         </div>
 

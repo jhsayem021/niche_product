@@ -31,7 +31,7 @@ const Dashbaord = () => {
               {
                 !isAdmi && <div>
                   <Link to="/dashboard/payment">
-                <li className="dashboard-menu mt-5">Pay</li>
+                <li className="dashboard-menu mt-5">Payment</li>
               </Link>
 
               <Link to={`${url}/UserBookingList`}>

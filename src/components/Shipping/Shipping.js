@@ -29,7 +29,7 @@ const Shipping = () => {
     };
     return (
         <div>
-            <h3 className="text-center py-5">Give your shipping address</h3>
+            <h3 className="text-center py-5">Type shipping address</h3>
             <form className="shipping-form" onSubmit={handleSubmit(onSubmit)}>
 
                 <input defaultValue={user.displayName} {...register("name")} />
